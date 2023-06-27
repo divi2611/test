@@ -1,0 +1,83 @@
+
+body::-webkit-scrollbar {
+  width: 1em; /* This sets the width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); /* This sets the color and style of the track of the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey; /* This sets the color of the scroll thumb */
+  outline: 1px solid slategrey; /* This sets the outline color of the scroll thumb */
+}
+
+
+.chatbox-container {
+    position: 56px,40px,0px;
+    top: 50px;
+    right: 90px;
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background-color: rgba(184, 177, 177, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    overflow: auto;
+  
+  }
+  
+  .chatbox-messages {
+    max-height: 300px;
+ 
+    margin-bottom: 10px;
+  }
+  
+  .chatbox-messages .message {
+    padding: 5px;
+    margin-bottom: 5px;
+    
+  }
+  
+  .chatbox-messages .user {
+    text-align: right;
+    background-color: #1e66eb9a;
+    
+  }
+  
+  .chatbox-messages .npc {
+    text-align: left;
+    background-color: #e1f5fe44;
+   
+  }
+  
+  .chatbox-input {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .chatbox-input input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .chatbox-input button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .record-button {
+    color: #a4a4a4;
+  }
+  
+  .record-button.pressed {
+    color: #1c1f46;
+    ;
+    /* Additional styles for the pressed state */
+  }
